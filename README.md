@@ -1,4 +1,4 @@
-# Breast Cancer Image Classification Project (Breast cancer with PTs and Fibs)
+# Breast Cancer Image Classification Project (Breast cancer with PTs and FAs)
 
 This project is designed for classifying breast cancer images using TensorFlow/Keras. It includes complete data preprocessing, augmentation, model training, prediction, and utility tools.
 
@@ -7,12 +7,12 @@ This project is designed for classifying breast cancer images using TensorFlow/K
 ## Project Structure
 
 ```
-├── train.py               # Main training script (InceptionV3 + Cross-validation)
+├── train.py               # Main training script 
 ├── predict.py             # Inference script using trained model
 ├── data_process.py        # Dataset preprocessing & patient ID check
 ├── data_enhance.py        # Data augmentation (rotation, flip, brightness, etc.)
 ├── utils.py               # Image resize, loading, and result mapping tools
-├── model/                 # Model definition files (e.g., VGG16)
+├── model/                 # Model definition files (e.g., models)
 ├── data/
 │   ├── train.txt          # File list and label info
 │   ├── second_image/      # Image folder
@@ -28,7 +28,6 @@ This project is designed for classifying breast cancer images using TensorFlow/K
 - Custom fully connected layers + Dropout
 - Output: binary classification with softmax
 - 3-fold cross-validation training
-- Model checkpoint every 3 epochs
 
 To train:
 ```bash
@@ -39,7 +38,7 @@ python train.py
 
 ## Inference (predict.py)
 
-- Loads a trained model (e.g., VGG16)
+- Loads a trained model (e.g., Xception)
 - Preprocesses and predicts a single image
 - Outputs label (e.g., cancer / norm / polyp)
 
