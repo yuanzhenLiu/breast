@@ -1,4 +1,4 @@
-# Breast Cancer Image Classification Project ()
+# Breast Cancer Image Classification Project (Breast cancer with PTs and Fibs)
 
 This project is designed for classifying breast cancer images using TensorFlow/Keras. It includes complete data preprocessing, augmentation, model training, prediction, and utility tools.
 
